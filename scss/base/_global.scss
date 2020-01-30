@@ -1,0 +1,88 @@
+/* ---------------------------------------------------- */
+/* ----- GLOBAL STYLES ----- */
+/* ---------------------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  --scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  font-family: "scroll-behavior: smooth";
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+
+  @media #{$desktop__1200} {
+    overflow-x: hidden;
+    scroll-padding-top: 80px;
+  }
+}
+
+@font-face {
+  font-family: "vagroundedregular";
+  src: url("../fonts/vagrounded-thin-webfont.woff2") format("woff2"),
+    url("../fonts/vagrounded-thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: $font-base;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  margin: 0;
+}
+
+p {
+  padding-bottom: 20px;
+}
+
+button {
+  background: none;
+  border: 0;
+}
+/* --- CLEARFIX --- */
+.clearfix {
+  @include clearfix;
+}
+
+/* --- WEBPAGE CONTAINER --- */
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1530px;
+  /* maksymalna szerokość projektu - 1920px */
+  position: relative;
+}
+
+/* ----- END OF GLOBAL STYLES ----- */

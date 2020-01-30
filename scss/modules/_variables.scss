@@ -1,0 +1,34 @@
+// ----------------------------------------------------
+// ----- VARIABLES -----
+// ----------------------------------------------------
+
+// --- Font ---
+$font-banner: "vagroundedregular", sans-serif;
+$font-base: "Ubuntu", sans-serif;
+
+// --- Colors ---
+$white: #fff;
+$black: #000;
+
+$port-gore: #311e46;
+$supernova: #fac800;
+$mine-shaft: #333;
+$tundora: #474747;
+$dusty-gray: #969595;
+$gray: #878787;
+$alto: #ddd;
+
+$navigation-border-bottom: rgba($white, 0.1);
+$header-purple-background: rgba($port-gore, 0.5);
+$overlay-background: rgba($port-gore, 0.4);
+$overlay-background-darken: rgba($port-gore, 0.8);
+
+$triangle: rgba($supernova, 1);
+
+// --- Media Queries ---
+$mobile_land__576: "(max-width: 576px)";
+$tablet__768: "(min-width: 768px)";
+$desktop__1200: "(min-width: 1200px)";
+$large__screens__1920: "(min-width: 1920px)";
+
+// ----- END OF VARIABLES -----

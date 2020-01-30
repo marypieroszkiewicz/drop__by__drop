@@ -1,0 +1,36 @@
+// ----------------------------------------------------
+// ----- MIXINS -----
+// ----------------------------------------------------
+
+// --- Clearfix ---
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// ----- End Of Clearfix -----
+
+@mixin break-word {
+  display: block;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  white-space: normal;
+}
+
+@mixin header-before--after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  pointer-events: none;
+}
+
+// ----- END OF MIXINS -----

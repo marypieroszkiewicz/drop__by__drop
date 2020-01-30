@@ -1,0 +1,146 @@
+/* ---------------------------------------------------- */
+/* ----- FOOTER ----- */
+/* ---------------------------------------------------- */
+
+.footer {
+  background: $port-gore;
+
+  &-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: $white;
+    padding: 1.813rem 0 0.9375rem;
+
+    @media #{$tablet__768} {
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    @media #{$desktop__1200} {
+    }
+
+    @media #{$large__screens__1920} {
+    }
+
+    &__copyright {
+      order: 2;
+      width: 100%;
+
+      @media #{$tablet__768} {
+        order: 1;
+        width: 50%;
+      }
+
+      @media #{$desktop__1200} {
+        width: auto;
+      }
+
+      &-text {
+        text-align: center;
+        font-size: 0.875rem;
+        font-weight: 400;
+        padding: 0;
+
+        @media #{$tablet__768} {
+          font-size: 1rem;
+          text-align: left;
+        }
+
+        @media #{$desktop__1200} {
+          font-size: 1.125rem;
+          text-align: left;
+        }
+
+        @media #{$large__screens__1920} {
+          padding-left: 0;
+        }
+      }
+    }
+
+    &__contact {
+      order: 1;
+      text-align: center;
+      font-size: 0.875rem;
+      font-weight: 400;
+      padding-bottom: 1.25rem;
+
+      @media #{$tablet__768} {
+        order: 2;
+        width: 50%;
+        font-size: 1rem;
+        padding-bottom: 0;
+        text-align: right;
+      }
+
+      @media #{$desktop__1200} {
+        width: auto;
+        font-size: 1.125rem;
+      }
+
+      &-info {
+        display: block;
+
+        &:not(:last-child) {
+          padding-bottom: 0.3125rem;
+        }
+
+        &--email::before {
+          content: "e-mail: ";
+          display: inline-block;
+          color: $white;
+        }
+
+        &--email:hover {
+          color: $supernova;
+        }
+
+        &--phone::before {
+          content: "tel.";
+          display: inline-block;
+          color: $white;
+        }
+
+        &--phone:hover {
+          color: $supernova;
+        }
+
+        @media #{$tablet__768} {
+          display: inline-block;
+
+          &--phone::after {
+            content: ",";
+            color: $white;
+            display: inline-block;
+          }
+
+          &--address {
+            display: block;
+          }
+        }
+      }
+    }
+
+    &__legal {
+      order: 3;
+      font-size: 0.5625rem;
+      text-align: center;
+      padding: 1.25rem 0.625rem 0;
+      color: $alto;
+
+      @media #{$tablet__768} {
+        padding: 1.875rem 0.625rem 0;
+      }
+
+      @media #{$large__screens__1920} {
+        font-size: 0.625rem;
+      }
+
+      &-text {
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+/* ----- END OF FOOTER ----- */
